@@ -30,6 +30,119 @@
 			"qubicle_tip": "Route to a queue",
 			"which_queue": "Which queue?"
 		},
+		"callcenter": {
+			"queue": "Queue",
+			"category": "Callcenter",
+			"priority": "Priority",
+			"priority_tooltip": "Assign a priority to the caller",
+			"tooltip": "Ask the caller to input the first letters of the name of the person that he wants to reach.",
+			"connect_caller_to_queue": "Connect caller to queue...",
+			"queue_edit_options": "Edit queue options",
+			"agentResume": "Agent Resume",
+			"agentBreak": "Agent Break",
+			"logoutAgent": "Logout Agent",
+			"loginAgent": "Login Agent",
+			"toggleAgent": "Toggle Agent",
+			"editQueue": "Edit Queue",
+			"createQueue": "Create Queue",
+			"basic": "Basic",
+			"advanced": "Advanced",
+			"options": "Options",
+			"namePlaceholder": "Name",
+			"nameDataContent": "Friendly name for this Queue",
+			"noName": "no name",
+			"user": "User",
+			"actions": "Actions",
+			"addUser": "Add user to the queue",
+			"select": "Select",
+			"addThisUser": "Add",
+			"queueTimeoutPlaceholder": "Queue timeout (s)",
+			"queueTimeoutDataContent": "How long caller stays in queue, in seconds",
+			"queueTimeout": "Queue timeout (s)",
+			"memberTimeout": "Member timeout (s)",
+			"memberTimeoutPlaceholder": "Member timeout (s)",
+			"memberTimeoutDataContent": "How long to ring an agent's phone before moving to the next agent",
+			"delete": "Delete",
+			"deleteConfirmMessage": "Are you sure you want to delete this queue?",
+			"save": "Save",
+			"thereIsCurrentlyNoUser": "There is currently no user in this queue",
+			"userLabel": "Users list",
+			"selectQueue": "Select Queue",
+			"agent_ring_timeout": "In seconds, how long to ring an agent before progressing to the next agent available",
+			"agent_wrapup_time": "Pre-defined wait period applied after an agent handles a customer call",
+			"announce": "Media to play when caller is about to be connected.",
+			"announcements.interval": "Time between announcements",
+			"announcements.media.in_the_queue": "Played after the numeric position",
+			"announcements.media.increase_in_call_volume": "Played if the estimated wait time has increased since the previous wait time announcement",
+			"announcements.media.the_estimated_wait_time_is": "Played before the estimated wait time media",
+			"announcements.media.you_are_at_position": "Played before the numeric position",
+			"announcements.media": "Custom prompts to be played for the announcements",
+			"announcements.position_announcements_enabled": "Whether announcements of the caller's position in the queue should be played",
+			"announcements.wait_time_announcements_enabled": "Whether announcements of the estimated wait time in the queue should be played",
+			"announcements": "Configuration for periodic announcements to callers waiting in the queue",
+			"caller_exit_key": "Key caller can press while on hold to exit the queue and continue in the callflow",
+			"cdr_url": "An optional HTTP URL to POST the CDR",
+			"connection_timeout": "In seconds, how long to try to connect the caller before progressing past the queue callflow action",
+			"enter_when_empty": "Allows a caller to enter a queue and wait when no agents are available",
+			"max_priority": "Maximum possible priority level queue will support. Can not be redefined for existing queue.",
+			"max_queue_size": "How many callers are allowed to wait on hold in the queue (0 for no limit)",
+			"moh": "Media to play while caller is on hold.",
+			"name": "A friendly name for the queue",
+			"record_caller": "When enabled, a caller's audio will be recorded",
+			"recording_url": "An optional HTTP URL to PUT the call recording after the call ends (and should respond to GET for retrieving the audio data)",
+			"ring_simultaneously": "The number of agents to try in parallel when connecting a caller",
+			"strategy": "The queue strategy for connecting agents to callers"
+		},
+		"introTitle": "What is Callflow?",
+		"introDescription": "A callflow defines what happens when someone dials an extension or phone number.",
+		"guide": {
+			"addCallflow": "Click this button to create new callflow",
+			"addNumber": "Click this button to add phone or extension number into callflow <br/>When someone dials these number, they will behave according to the way you set up the callflow.",
+			"dragAndDropAction": "Drag actions from the actions panel to the callflow box. You can customize a callflow by adding more actions. <div class='callflows-drag-and-drop'></div>",
+			"nextBtnText": "Next »",
+			"endTourBtnText": "Close"
+		},
+		"__comment": "UI-3210: Add Set Ringtone callflow element",
+		"setAlertInfo": {
+			"name": "Distinctive Ring",
+			"title": "Set Distinctive Ring",
+			"label": "\"Alert-Info\" Header",
+			"tip": "Set distinctive ring for incoming call"
+		},
+		"webhook": {
+			"help": "This feature allows you to trigger a webhook call at any level of the callflow, to get \"real time\" info on how the callflow is behaving.",
+			"popupTitle": "Trigger Webhook",
+			"title": "Webhook",
+			"tip": "Trigger a webhook at any level in a callflow to get \"real time\" info on how the callflow is behaving.",
+			"uri": {
+				"label": "URL",
+				"help": "The HTTP URI to send the request",
+				"errorMessages": {
+					"url": "Invalid URL"
+				}
+			},
+			"httpVerb": {
+				"label": "Request Type",
+				"help": "HTTP method to use when sending the request"
+			},
+			"format": {
+				"label": "Body Format",
+				"help": "Format to use when sending the webhook ",
+				"options": {
+					"formData": "FORM-DATA",
+					"json": "JSON"
+				}
+			},
+			"retries": {
+				"label": "Re-try attempts",
+				"help": "How many times to retry the request if the host isn't available"
+			},
+			"customData": {
+				"label": "Custom data (optional)",
+				"help": "These properties will be added to the event and will overwrite existing values"
+			}
+		}
+	},
 		"conference": {
 			"conference": "Conference",
 			"conference_tip": "Connect a caller to a Meet-Me conference bridge",
